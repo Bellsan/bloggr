@@ -4,5 +4,12 @@
   {{ super() }}
 {% endblock %}
 {% block content %}
-    <h1>Hello, login!</h1>
+    <h1>Hello, Login!</h1>
+    <form method="POST">
+        <input type="text" name="username" id="username" placeholder="username">
+        <br>
+        <input type="password" name="password" id="password" placeholder="password">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
 {% endblock %}
